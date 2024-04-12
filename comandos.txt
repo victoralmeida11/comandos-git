@@ -1,0 +1,100 @@
+git init: Inicia um repositório Git em um diretório.
+git clone <url>: Clona um repositório Git para o seu sistema local.
+git add <file>: Adiciona um arquivo ao índice (staging area).
+git add .: Adiciona todos os arquivos modificados ao índice.
+git commit -m "mensagem": Registra as alterações no repositório local com uma mensagem.
+git status: Verifica o estado atual do repositório.
+git push: Envia commits para o repositório remoto.
+git pull: Puxa alterações do repositório remoto para o repositório local.
+git branch: Lista todas as branches no repositório local.
+git branch <branch_name>: Cria uma nova branch.
+git checkout <branch_name>: Muda para uma branch existente.
+git checkout -b <branch_name>: Cria e muda para uma nova branch.
+git merge <branch_name>: Une uma branch específica à branch atual.
+git log: Exibe o histórico de commits.
+git reset --hard HEAD: Reseta o diretório de trabalho para o estado do último commit.
+git reset --soft HEAD~1: Desfaz o último commit, mantendo as alterações no diretório de trabalho.
+git remote add <name> <url>: Adiciona um repositório remoto.
+git remote -v: Lista todos os repositórios remotos.
+git fetch <remote>: Busca alterações do repositório remoto, mas não faz merge.
+git stash: Salva temporariamente alterações que não estão prontas para serem commitadas.
+git stash pop: Recupera as alterações salvas temporariamente pelo git stash.
+git tag <tag_name>: Cria uma tag para o commit atual.
+git tag -l: Lista todas as tags.
+git tag -a <tag_name> -m "mensagem": Cria uma tag anotada.
+git push --tags: Envia tags para o repositório remoto.
+git push <remote> --delete <branch_name>: Exclui uma branch remota.
+git branch -d <branch_name>: Exclui uma branch local.
+git diff: Mostra as diferenças entre alterações nos arquivos.
+git diff --cached: Mostra as diferenças entre o índice e o último commit.
+git cherry-pick <commit>: Aplica um commit específico em uma branch.
+git rebase <branch>: Reaplica os commits da branch atual em cima da branch especificada.
+git remote show <remote>: Mostra informações sobre um repositório remoto.
+git submodule add <url>: Adiciona um repositório como submódulo.
+git submodule update --init: Inicializa os submódulos.
+git clean -n: Lista os arquivos que serão removidos do diretório de trabalho.
+git clean -f: Remove os arquivos listados pelo git clean -n.
+git config --global user.name "Seu Nome": Configura o nome do usuário para commits.
+git config --global user.email "seuemail@example.com": Configura o email do usuário para commits.
+git commit --amend: Altera o último commit.
+git log --graph --oneline --decorate --all: Mostra um gráfico de histórico de commits.
+git reflog: Mostra um log de referências, útil para recuperar commits perdidos.
+git bisect: Ajuda a encontrar o commit que introduziu um bug.
+git grep <pattern>: Procura por um padrão em arquivos do repositório.
+git blame <file>: Mostra quem alterou cada linha de um arquivo e em qual commit.
+git archive --format=zip --output=../<archive_name>.zip <branch>: Cria um arquivo zip do conteúdo de uma branch.
+git revert <commit>: Cria um novo commit que reverte as alterações de um commit específico.
+git push <remote> --force: Força o push, sobrescrevendo o histórico remoto.
+git cherry-pick --continue: Continua um cherry-pick após a resolução de conflitos.
+git bisect good <commit>: Marca um commit como "bom" durante o processo de bisect.
+git bisect bad <commit>: Marca um commit como "ruim" durante o processo de bisect.
+git log --author=<author>: Mostra os commits de um autor específico.
+git remote rename <old_name> <new_name>: Renomeia um repositório remoto.
+git remote remove <name>: Remove um repositório remoto.
+git commit --fixup <commit>: Cria um commit de correção relacionado a um commit anterior.
+git commit --squash <commit>: Agrupa um commit com o commit anterior durante o rebase.
+git rebase -i HEAD~<n>: Inicia uma rebase interativa para os últimos n commits.
+git stash list: Lista todos os stashes salvos.
+git stash apply <stash>: Aplica um stash específico.
+git cherry-pick --abort: Cancela um cherry-pick em andamento.
+git revert --continue: Continua uma operação de revert após a resolução de conflitos.
+git checkout -- <file>: Desfaz as modificações locais em um arquivo.
+git log --grep="<pattern>": Filtra os commits por uma mensagem de commit.
+git log --since="<time>": Mostra os commits desde um determinado momento.
+git log --until="<time>": Mostra os commits até um determinado momento.
+git log -- <path/to/file>: Mostra os commits que modificaram um arquivo específico.
+git push <remote> :<branch_name>: Remove uma branch do repositório remoto.
+git remote set-url <remote> <url>: Atualiza a URL de um repositório remoto.
+git clean -xdf: Remove arquivos não rastreados e diretórios ignorados.
+git fetch --prune: Remove referências remotas que não estão mais no repositório remoto.
+git diff <commit1>..<commit2>: Mostra as diferenças entre dois commits.
+git diff <branch1>..<branch2>: Mostra as diferenças entre duas branches.
+git diff <branch>..<file>: Mostra as diferenças entre uma branch e um arquivo específico.
+git diff --color-words: Mostra as diferenças por palavras.
+git blame -L <start>,<end> <file>: Mostra quem alterou um intervalo específico de linhas em um arquivo.
+git blame -C <file>: Mostra quem alterou cada linha de um arquivo, mesmo se a linha foi movida ou copiada de outro arquivo.
+git config --global alias.<alias_name> <git_command>: Cria um alias para um comando Git.
+git shortlog: Mostra um resumo de commits por autor.
+git shortlog -s -n: Mostra um resumo de commits por autor, ordenado por número de commits.
+git diff --submodule: Mostra as diferenças nos submódulos.
+git reflog show <refname>: Mostra o reflog para uma referência específica.
+git merge --abort: Cancela um merge em andamento.
+git revert --no-commit <commit>: Aplica as alterações de um commit sem fazer commit imediato.
+git revert --strategy=recursive -X theirs <commit>: Resolve automaticamente conflitos em favor das alterações do commit revertido.
+git commit --fixup=<commit>: Cria um commit de correção relacionado a um commit anterior.
+git commit --squash=<commit>: Agrupa um commit com o commit anterior durante o rebase.
+git rebase --onto <newbase> <oldbase>: Reaplica os commits de uma base antiga em uma nova base.
+git rebase --interactive <base>: Inicia uma rebase interativa em relação a uma base específica.
+git rebase --continue: Continua uma rebase após a resolução de conflitos.
+git rebase --abort: Cancela uma rebase em andamento.
+git log --oneline: Mostra cada commit em uma única linha.
+git log --graph: Mostra um gráfico de commits.
+git log --decorate: Mostra as referências (como branches e tags) de cada commit.
+git log --all: Mostra todos os commits de todas as branches.
+git commit --amend --no-edit: Altera o último commit sem alterar a mensagem de commit.
+git commit --amend --author="Nome <email>": Altera o autor do último commit.
+git clean -f -d: Remove arquivos não rastreados e diretórios não rastreados.
+git fetch --all: Busca todas as branches de todos os repositórios remotos.
+git pull --rebase: Puxa as alterações do repositório remoto e aplica localmente através de um rebase.
+git reset HEAD <file>: Remove um arquivo específico do índice (staging area).
+git reflog expire --expire=now --all: Limpa o reflog e remove entradas antigas.
